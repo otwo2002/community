@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" CONTENT="미국 / 일본 / 독일 배송대행 전문업체, 직접 물류센터 운영, 해외 구매대행, 가이드 제공">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="뉴욕걸즈 - No.1 해외구매 서비스">
+<meta property="og:description" content="미국 / 일본 / 독일 배송대행 전문업체, 직접 물류센터 운영, 해외 구매대행, 가이드 제공">
+<meta property="og:image" content="http://nygirlz.co.kr/main/img/logo.gif">
+<meta property="og:url" content="http://nygirlz.co.kr">
+
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>뉴욕걸즈 - No.1 해외구매 서비스</title>
+<link href="/main/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script language='JavaScript' src='/main/comm/js/script.js' type='text/javascript'></script>
+	<link rel="stylesheet" href="/system/css/jquery-ui-1.10.2.custom.min.css">
+
+<script type="text/javascript" src="/main/comm/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/system/js/jquery-ui-1.10.2.custom.min.js"></script>
+
+<script language="JavaScript" src="/main/comm/js/common.js"></script> <!-- 퀵메뉴 관련 소스 -->
+<script language="JavaScript" src="/include/common.js"></script> <!-- screenpop 기존홈페이지 JS 라이브러리 소스 -->
+
+<link rel="stylesheet" href="/main/comm/css/nutip.css">
+<script src="/main/comm/js/jquery.nutip-1.0.min.js"></script>
+	
+<script> 
+function getCookie(name)
+{
+        var prefix = name + "=";
+        var cookieStartIndex = document.cookie.indexOf(prefix);
+        if (cookieStartIndex == -1) return null;
+        var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length);
+        if (cookieEndIndex == -1) cookieEndIndex = document.cookie.length;
+        return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex));
+}
+function setCookie( name, value, expiredays )
+{
+  var endDate = new Date();
+  endDate.setDate( endDate.getDate()+ expiredays );
+  document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + endDate.toGMTString() + ";"
+}
+
+function closeAddressAlert(cookieName)
+{
+  setCookie(cookieName , "Y" , 365);
+  $("#or_address_notice_s").hide("fast");
+}
+
+$(document).ready(function() 
+{
+	
+	if(getCookie("or_address_notice_s")==null)
+	{
+		$("#or_address_notice_s").show("fast");
+	}
+});
+
+function clipboard(str) {
+	// window.clipboardData.setData("Text", str);
+	// alert("복사 하였습니다.\n\n"+str);
+	var agent = navigator.userAgent.toLowerCase(); 
+	var IE=(document.all)?true:false;
+	// if (agent.indexOf("msie") != -1) { 
+	//<-- IE11까지 체크..
+	if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+		window.clipboardData.setData("Text", str);
+		alert("복사 하였습니다.\n\n"+str);
+	} else {
+		temp = prompt("Ctrl+C를 눌러 클립보드로 복사하세요", str);
+	}			
+}
+
+</script>
+
+
+<!-- 201.11.13 - 블랙프라이데이 레이어팝업 -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet">
+<style type="text/css">
+@import url("/main/font/NotoKR-Regular/stylesheet.css");
+#popupLayer{position:fixed; width:347px; height:374px; bottom:20px; right:15px; z-index:99999; background:url('/main/event/img/event_171123_pop.png') 0 0 no-repeat;}
+#popupLayer h3{overflow:hidden; clear:both; width:100%; height:100%; }
+#popupLayer h3 a{display:block; width:50%; height:90%; float:left; margin-top:10%;}
+#popupLayer .check{position:absolute; top:5px; right:12px;}
+#popupLayer .check label{color:#868686; font-size:13px; letter-spacing:-0.35pt; font-family:NotoKR-Regular}
+#popupLayer .btn_close{position:absolute; right:12px; top:30px}
+</style>
+
+<script language="javascript">
+
+function readCookie(cookiename)
+{
+ var Found = false;
+
+ cookiedata = document.cookie;
+ if ( cookiedata.indexOf(cookiename) >= 0 ){
+   Found = true;
+ }
+ return Found;
+}
+
+function setCookie( name, value, expiredays )
+{
+ var todayDate = new Date();
+ todayDate.setDate( todayDate.getDate() + expiredays );
+ document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+
+
+  function popupClose(){
+    setCookie("popupDayClose1", "true", 1);
+    popupLayer.style.display = 'none';
+  }
+
+  function popupClose2(){
+    popupLayer.style.display = 'none';
+}
+
+
+</script>
+
+<!-- <div id="popupLayer">
+  <h3>
+  <a href="/main/event/event_black1711Ver1.php"></a>
+  <a href="/main/event/event_black1711Ver2.php"></a>
+  </h3>
+   <div class="check"><input type="checkbox" onClick="popupClose();"> <label>더 이상 보지않기</label></div>
+  <div class="btn_close">
+  <input type="image" onClick="popupClose2();" src="/main/event/img/event_171113_pop_close.png" align="absmiddle"></div>
+</div> -->
+
+<script language="javascript">
+
+if(readCookie('popupDayClose1')){
+  popupLayer.style.display = 'none';
+}
+
+</script>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/main/comm/css/sub.css" />
+
+
+
+
+<script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "eaffeac10b123c";
+wcs_do();
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '779700225501053'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" src="https://www.facebook.com/tr?id=779700225501053&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+</head>
+<body>
+
+<iframe src="/main/jsAlerts.php" frameborder="0" width="0" height="0" allowTransparency="true" name="frame" id="alert_iframe" marginwidth="0" marginheight="0" scrolling="no"allowtransparency="true"></iframe>
+<script>
+/*
+function checkAlerts()
+{
+	document.getElementById('alert_iframe').src='/main/jsAlerts.php';
+	setTimeout("checkAlerts()", 120000);
+}
+setTimeout("checkAlerts()", 120000);	
+*/
+
+var checkAlerts = function() {	
+	document.getElementById('alert_iframe').src='/main/jsAlerts.php';
+	timeId = setTimeout("checkAlerts()",120000); //2Ка //1000*60*2
+}
+
+checkAlerts();
+
+</script>
+  
+<!-- wrap -->
+<div id="wrap">
+  <!-- Header -->
+  <div id="header">
+		<div class="header_in">
+			<div class="topUtil">
+				<dl>
+					<dd><a href="/main/eshop/index.php"><img src="/main/img/top_go.gif"> <strong>뉴걸 E-SHOP</strong> 바로가기</a></dd>
+					<dd><a href="javascript:bookmarksite();" class="lpad_20"><img src="/main/img/top_favorite.gif"> 뉴걸 즐겨찾기 추가</a></dd>
+					<dd><a href="http://cafe.naver.com/newyorkgirlz" class="lpad_20" target="_blank"><img src="/main/img/top_go.gif"> <strong>뉴걸카페</strong> 바로가기</a></dd>
+				</dl>
+				<ul>
+						<li class="first"><a href="/main/">홈으로</a></li>
+											<li><a href="/main/member/login.php">로그인</a></li>
+						<li><a href="/main/member/agree.php">회원가입</a></li>
+						<li class="last"><a href="/main/customer/notice.php"><img src="/main/img/top_center.gif" alt="고객센터"></a></li>
+										
+				</ul>
+			</div>
+			
+			<h1><a href="/main/"><img src="/main/img/logo.gif" alt="뉴욕걸즈" /></a></h1>
+			<div class="number_bn_de2">
+				<dl style="width:130px;">
+					<dt><img src="/main/img/bn_usa.gif" alt="미국" width=30><br/>
+						<a href="/main/guide/post_office.php"><img src="/main/img/btn_use_sm.gif" alt="주소사용법" width=30></a>
+					</dt>
+					<dd><span class="pointTxt1">USA N.J</span><span class="mint"> (뉴저지)</span></dd>
+					<dd><a href="javascript:clipboard('134 Liberty St')" class="mu_address">134 Liberty St</a></dd>
+					<dd class="orange"><a href="javascript:clipboard('[나의 사서함번호]')" class="mu_address"><font color="red">[나의 사서함번호]</font></a></dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('Hackensack')" class="mu_address">Hackensack,</a></dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('07601')" class="mu_address">NJ 07601</a></dd>
+					<dd><span style="padding-left:33px;"><a href="javascript:clipboard('201-488-0054')" class="mu_tel">☎ 201-488-0054</a></span></dd>
+				</dl>
+				
+				<dl style="width:130px;">
+					<dt><img src="/main/img/bn_usa.gif" alt="미국" width=30><br/><a href="/main/guide/post_office.php"><img src="/main/img/btn_use_sm.gif" alt="주소사용법" width=30></a></dt>
+					<dd><span class="pointTxt1">USA O.R</span><span class="mint"> (오레곤)</span></dd>
+					<dd><a href="javascript:clipboard('7910 SW Nimbus Ave')" class="mu_address">7910 SW Nimbus Ave</a>,</dd>
+					<dd class="orange"><a href="javascript:clipboard('[나의 사서함번호]')" class="mu_address"><font color="red">[나의 사서함번호]</font></a></dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('Beaverton')" class="mu_address">Beaverton,</a></dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('97008')" class="mu_address">OR 97008</a></dd>
+					<dd><span style="padding-left:33px;"><a href="javascript:clipboard('201-488-0054')" class="mu_tel">☎ 201-488-0054</a></span></dd>
+				</dl>
+				
+				<dl style="width:150px;">
+					<dt><img src="/main/img/bn_usa.gif" alt="미국" width=30><br/><a href="/main/guide/post_office.php"><img src="/main/img/btn_use_sm.gif" alt="주소사용법" width=30></a></dt>
+					<dd><span class="pointTxt1">USA D.E</span><span class="mint"> (델라웨어)</span></dd>
+					<dd><a href="javascript:clipboard('314 Robinson Ln. #F')" class="mu_address">314 Robinson Ln. #F</a></dd>
+					<dd class="orange"><a href="javascript:clipboard('[나의 사서함번호]')" class="mu_address"><font color="red">[나의 사서함번호]</font></a></dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('Wilmington')" class="mu_address">Wilmington</a>,</dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('19805')" class="mu_address">DE 19805</a></dd>
+					<dd><span style="padding-left:33px;"><a href="javascript:clipboard('201-488-0054')" class="mu_tel">☎ 201-488-0054</a></span></dd>
+				</dl>				
+								
+				<dl style="width:165px;">
+					<dt><img src="/main/img/bn_jp.gif" alt="일본" width=30><br/><a href="/main/guide/post_office.php"><img src="/main/img/btn_use_sm.gif" alt="주소사용법" width=30></a></dt>
+					<dd><span class="pointTxt1">JAPAN Tokyo</span><span class="mint"> (일본)</span></dd>
+					<dd  style="padding-left:33px;"><a href="javascript:clipboard('110-0015')" >110-0015</a>
+						&nbsp;
+						<a href="javascript:clipboard('東京都')" class="mu_address">東京都</a><br/>
+						
+						<a href="javascript:clipboard('台東区&nbsp;&nbsp;東上野３－１７－１鍋島ビル２階')" title="台東区&nbsp;&nbsp;東上野３－１７－１鍋島ビル２階">
+						<span style="font-size:11px;line-height:1px;">台東区&nbsp;&nbsp;東上野 3－17－1<br>鍋島ビル２階</span>
+						</a>  
+						
+						
+					</dd>
+					<dd style="padding-left:33px;" class="orange"><a href="javascript:clipboard('[나의 사서함번호]')" class="mu_address"><font color="red">[나의 사서함번호]</font></a></dd>
+					<dd><span style="padding-left:33px;"><a href="javascript:clipboard('050-3368-5873')" class="mu_tel">☎ 050-3368-5873</a></span></dd>
+				</dl>
+				
+				<dl style="width:160px;">
+					<dt><img src="/main/img/bn_de.gif" alt="독일" width=30><br/><a href="/main/guide/post_office.php"><img src="/main/img/btn_use_sm.gif" alt="주소사용법" width=30></a></dt>
+					<dd><span class="pointTxt1">GERMANY </span><span class="mint">(독일)</span> </dd>
+					<dd><a href="javascript:clipboard('Limesstr.8,')" class="mu_address">Limesstr.8,</a></dd>
+					<dd class="orange"><a href="javascript:clipboard('[나의 사서함번호]')" class="mu_address"><font color="red">[나의 사서함번호]</font></a></dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('Bruchkoebel')" class="mu_address">Bruchkoebel,</a></dd>
+					<dd style="padding-left:33px;"><a href="javascript:clipboard('63486')" class="mu_address"> 63486</a></dd>
+					<dd><span style="padding-left:33px;"><a href="javascript:clipboard('06181-576-3413')" class="mu_tel">☎ 06181-576-3413</a></span></dd>
+				</dl>
+				
+			</div>					
+		</div>		
+	</div>
+  <!--//Header -->
+
+
+	<!--퀵메뉴-->
+
+				
+	<link id="css" href="screen.ui.css" rel="stylesheet" type="text/css" media="screen"></link>
+	<script type="text/javascript" src="/main/comm/js/default.js"></script>
+    
+		<script>
+		$(function () {
+			$(window).resize(function () {
+				toggleRNB();
+			})
+			
+			toggleRNB();
+			activateRNB();
+
+			
+		});
+
+		var toggleRNB = function () {
+			if ($(window).width() < 1100) {
+				$(".left-wrap").hide();
+			} else {
+				$(".left-wrap").show();
+			}
+		}
+
+
+
+
+		var activateRNB = function () {
+			if (!$("#rnb_container")) return;
+			$(window).scroll(function () {
+				clearTimeout($.data(this, "scrollTimer"));
+				$.data(this, "scrollTimer", setTimeout(function () {
+					var rnb = $("#rnb_container");
+					var top = 30 + $(window).scrollTop();
+
+					var maxTop = $(document).height() - $("#footer").height() - rnb.height() - 760;
+					if (top > maxTop) top = maxTop;
+					rnb.animate({ top: top + "px" });
+				}, 220));
+			});
+
+		}
+		</script>
+
+		
+				
+		<!-- # 퀵메뉴 부분 quickmenu/ quick # -->
+		<div class="left-wrap" >
+			<div class="left-pos" id="rnb_container">		
+				<div>
+					<ul>
+						<li><a href="http://cafe.naver.com/newyorkgirlz" target="_blank"><img src="/main/img/left_bn01.gif" alt="뉴욕걸즈 카페가자~!"></a></li>
+						<li><a href="/main/guide/term.php"><img src="/main/img/left_bn02.gif" alt="해외직구 용어사전"></a></li>
+						<li><a href="/main/eshop/index.php" target="_blank"><img src="/main/img/left_bn03.gif" alt="뉴걸 E-SHOP"></a></li>
+						<li><a href="/main/event/dailyattend1802.php" target="_blank"><img src="/main/img/icon_daily_attend.png" width=90 alt="출첵"></a></li>
+					</ul>
+				</div>
+				<div>
+					<div class="right-pos" id="rnb_container">		
+						<div>
+							<ul>
+								<li><img src="/main/img/right_tit.gif" alt="해외구매는 뉴욕걸즈"></li>
+								<li><a href="/main/guide/weight_info.php"><img src="/main/img/right_bn01.gif" alt="제품별 예상무게"></a></li>
+								<li><a href="/main/service/calculator.php"><img src="/main/img/right_bn02.gif" alt="배송요금 계산기"></a></li>
+								<li><a href="/main/customer/coupon.php" target="_blank"><img src="/main/img/right_bn03.gif" alt="뉴걸 쿠폰사용법"></a></li>
+								<li><a href="/main/customer/schedule_view.php"><img src="/main/img/right_bn04.gif" alt="이번주 항공스케쥴"></a></li>
+								<li style="padding-top:5px;"><a href="/main/shipping/ship_single.php"><img src="/main/img/right_bn05.gif" alt="올바른 배송대행 신청방법"></a></li>
+							</ul>
+						</div>				
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+		<!-- # 퀵메뉴 부분 # -->
+
+		
+
+
+
+  <!-- menu -->			
+		<div class="gnb">
+			<div id="menu">
+				<ul class="menu"> 
+					<li><a href="/main/info/about.php" ><img src="/main/img/m01.gif" class="m_mar menu_on" /></a>
+						<div class="menu_depth">
+							<ul>
+								<li class="first"><a href="/main/info/about.php">뉴욕걸즈는?</a></li>
+								<li><a href="/main/info/merit.php">뉴욕걸즈 장점</a></li>
+								<li><a href="/main/info/ship_info.php">배송대행 안내</a></li>
+								<li><a href="/main/info/buy_info.php">구매대행 안내</a></li>
+								<li><a href="/main/info/eshop_info.php">뉴걸 E-shop 안내</a></li>
+								<li><a href="/main/info/benefit.php">회원등급 및 혜택</a></li>
+								<li><a href="/main/info/international.php">국제배송비 안내</a></li>
+								<li><a href="/main/info/international3.php">추가수수료 안내</a></li>
+								<li class="last"><a href="/main/info/empresa.php">기업회원 안내</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/main/guide/post_office.php" ><img src="/main/img/m02.gif" class="m_mar " /></a>   
+						<div class="menu_depth2">
+							<ul>
+								<li><a href="/main/guide/post_office.php">사서함번호란 무엇인가요?</a></li>
+								<li><a href="/main/guide/njor.php">NJ?OR? 물류센터 선택방법</a></li>
+								<li><a href="/main/guide/shop_info.php">자주 이용하는 쇼핑몰 소개</a></li>
+								<li><a href="/main/guide/recom_item.php">초보자용 해외직구 추천아이템</a></li>
+								<li><a href="/main/guide/recom_bestitem.php">국가별 직구아이템 베스트10</a></li>
+								<li><a href="/main/guide/tax_info.php">관세안내</a></li>
+								<li><a href="/main/guide/weight_info.php">제품별 예상무게 알아보기</a></li>
+								<li><a href="/main/guide/term.php">해외직구 용어사전</a></li>
+								<li><a href="/main/guide/forbid_list.php">배송불가 및 수입금지 리스트</a></li>
+								<li><a href="/main/guide/custom.php">개인통관 고유부호 발급안내</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/main/shipping/ship_order_list.php?menu=left&num_item=all&dowhat=searchby_status&order_type=1&q_loc_cd=&q_po=71"><img src="/main/img/m03.gif" class="m_mar " /></a>
+						<div class="menu_depth3">
+							<ul>
+								<li><a href="/main/shipping/ship_single.php">배송대행 신청방법</a></li>
+								<li><a href="/main/shipping/ship_order.php">배송대행 신청</a></li>
+								<li><a href="/main/shipping/order_imsi_list.php">배송대행 임시보관함</a></li>
+								<li><a href="/main/shipping/order_all.php">합배송 신청</a></li>
+								<li><a href="/main/shipping/return_list.php">문제발생(리턴 신청)</a></li>
+								<li><a href="/main/shipping/nodata_about.php">노데이터 신청</a></li>
+								<li><a href="/main/shipping//ship_order_list.php?menu=left&num_item=all&dowhat=searchby_status&order_type=1&q_loc_cd=&q_po=71">배송대행 내역조회</a></li>
+								<li><a href="/main/shipping/ship_tracking.php">델라웨어 도착조회</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/main/order/order_list.php?num_item=all&dowhat=searchby_status&order_type=2" ><img src="/main/img/m04.gif" class="m_mar " /></a>
+						<div class="menu_depth4">		
+							<ul>
+								<li><a href="/main/order/order_faq_list.php">구매대행 견적문의 신청방법</a></li>
+								<li><a href="/main/order/order_service.php">구매대행 견적문의</a></li>
+								<li><a href="/main/order/order_apply.php">구매대행 신청서 작성</a></li>
+								<li><a href="/main/order/order_list.php?num_item=all&dowhat=searchby_status&order_type=2">구매대행 내역조회</a></li>
+								<li><a href="/main/order/eshop_inquiry.php">뉴걸 E-Shop 조회</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/main/service/eng_service.php" ><img src="/main/img/m05.gif" class="m_mar " /></a>
+						<div class="menu_depth5">
+							<ul>
+								<!-- <li><a href="/main/service/call_service.php">영어전화 서비스</a></li> //-->
+								<li><a href="/main/service/eng_service.php">영작도움 서비스</a></li>
+								<li><a href="/main/service/receiving_service.php">우편물 수령서비스</a></li>
+								<li><a href="/main/service/benefit_service.php">부피무게 할인혜택 서비스</a></li>
+								<li><a href="/main/service/com_system.php">검수 및 보상제도</a></li>
+								<li><a href="/main/service/calculator.php">배송요금 계산기</a></li>
+								<li><a href="/main/service/size_change.php">사이즈 변환표</a></li>
+								<li><a href="/main/service/webtoon.php">재미로 보는 직구웹툰</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/main/deal/event.php" ><img src="/main/img/m06.gif" class="m_mar " /></a>
+						<div class="menu_depth">		
+							<ul>
+								<li><a href="/main/deal/event.php">진행중 이벤트</a></li>
+								<li><a href="/main/deal/cafe_event.php">카페 이벤트</a></li>
+								<li><a href="/main/deal/deal_info.php">최신핫딜정보</a></li>
+								<li><a href="/main/deal/auction.php">행운 경매
+								</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/main/customer/notice.php" ><img src="/main/img/m07.gif" class="m_mar " /></a>
+						<div class="menu_depth">		
+							<ul>
+								<li><a href="/main/customer/notice.php">공지사항</a></li>
+								<li><a href="/main/customer/faq.php">FAQ</a></li>
+								<li><a href="/main/customer/qna.php">1:1 문의</a></li>
+								<li><a href="/main/customer/schedule_view.php">이번주 항공스케줄</a></li>
+								<li><a href="/main/customer/exchange.php">이번주 고시환율</a></li>
+								<li><a href="/main/customer/coupon.php">뉴걸 쿠폰사용법</a></li>
+								<li><a href="/main/customer/rules.php">이용규칙</a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			
+			</div>
+			
+			
+			
+			<!--검색-->
+								<form name="search" action="/main/customer/faq.php" method=POST>
+				<div class="search">
+					<dl>
+						<dd><input name="faq_keyword" type="text" class="input_search" id="textfield"   style="color:#777;" value="" /></dd>
+						<dt><input type=image  src="/main/img/btn_search.gif" /></dt>
+					</dl>
+				</div>			
+				</form>
+								
+			<!--//검색-->
+			
+			
+			
+			
+		</div>		
+		<!--//gnbDiv-->
+
+
+    
+		
+  
+
+
+	  <!-- Contents -->
+  <div id="contents">
+  <div id="contentsIn">
+    
+	<!-- Left -->
+	<div class="lnb">
+
+	<h2><img src="img/left_tit.gif" ></h2>
+	    
+
+
+   		           
+  
+      
+	  <ul>
+			<li><a href="about.php"><img src="img/sm1.gif" onMouseOut="this.src='img/sm1.gif'" onMouseOver="this.src='img/sm1_up.gif'" /></a></li>
+			<li><a href="merit.php"><img src="img/sm2.gif" onMouseOut="this.src='img/sm2.gif'" onMouseOver="this.src='img/sm2_up.gif'" /></a></li>
+			<li><a href="ship_info.php"><img src="img/sm3.gif" onMouseOut="this.src='img/sm3.gif'" onMouseOver="this.src='img/sm3_up.gif'" /></a></li>
+			<li><a href="buy_info.php"><img src="img/sm4.gif" onMouseOut="this.src='img/sm4.gif'" onMouseOver="this.src='img/sm4_up.gif'" /></a></li>
+			<li><a href="eshop_info.php"><img src="img/sm5.gif" onMouseOut="this.src='img/sm5.gif'" onMouseOver="this.src='img/sm5_up.gif'" /></a></li>
+			<li><a href="benefit.php"><img src="img/sm6.gif" onMouseOut="this.src='img/sm6.gif'" onMouseOver="this.src='img/sm6_up.gif'" /></a></li>
+			<li><a href="international.php"><img src="img/sm7_up.gif" onMouseOut="this.src='img/sm7_up.gif'" onMouseOver="this.src='img/sm7_up.gif'" /></a></li>
+			<li><a href="international3.php"><img src="img/sm9.gif" onMouseOut="this.src='img/sm9.gif'" onMouseOver="this.src='img/sm9_up.gif'" /></a></li>
+			<li><a href="empresa.php"><img src="img/sm8.gif" onMouseOut="this.src='img/sm8.gif'" onMouseOver="this.src='img/sm8_up.gif'" /></a></li>
+    </ul>
+	
+
+
+		
+	  
+	   
+	</div>
+	<!--//Left -->
+
+
+		
+		
+	<!-- ContentArea -->
+		<div class="contentArea">	  
+
+		 <!-- tit_area -->
+			 <div class="tit_area">
+				 <p class="location"><a href="/main/" ><img src="/main/img/icon_home.gif" alt="메인(홈)으로 바로가기" /></a> > <a href=about.php class=here_link>뉴욕걸즈 서비스안내</a> > 국제배송비 안내</p>
+				<h3><img src="img/tit_sub7.gif" /></h3>
+		 </div>
+		 <!--//tit_area -->
+
+	
+
+	   <!-- ###실제컨텐츠영역 -->
+	   <div class="contents_in">
+     
+     
+	 
+
+<div class="inter_tit">
+	<ul class="green_boxInfo2">
+		<li>모든 항공 요금은 실제 물류센터에 도착하는 물건에 대하여 중량과 부피를 실측해 정해집니다.</li>
+		<li>미국화물의 무게단위는 파운드입니다. 1파운드(lb) = 0.453599kg 입니다.</li>
+		<li>미국 국제배송비는 뉴저지 / 오레곤 동일한 요금이 적용됩니다.</li>
+		<li>표에 기재된 국제배송비에는 항공운송비용 + 뉴욕걸즈 서비스 이용료가<br>
+		포함되어져 있습니다</li>
+		<li>배송비요율은 국제유가 및 기타사유로 변동될수 있습니다.</li>
+		<li>배송비는 100원 단위로 반올림 처리됩니다.</li>
+	</ul>
+</div>
+<div class="sub_area4">
+	<div id="About1">
+		<div class="tab2">
+			<ul>
+				<li class="hover"><a href="international.php"><img src="/main/img/bn_usa.gif" alt="미국" style="vertical-align:-80%;"> &nbsp;<span class="pointTxt1">미국</span></a></li>
+				<li><a href="international2.php"><img src="/main/img/bn_jp.gif" alt="일본" style="vertical-align:-80%;"> &nbsp;<span class="pointTxt1">일본</span></a></li>
+				<li><a href="international_de.php"><img src="/main/img/bn_de.gif" alt="독일" style="vertical-align:-80%;"> &nbsp;<span class="pointTxt1">독일</span></a></li>
+			</ul>
+		</div>
+		
+		<div>
+		* 달러금액은 금주 고시환율을 기준으로 표기된 금액이며, 뉴욕걸즈 배송비는 원화 금액으로 청구됩니다. 
+		</div>
+		
+		<!-- 내용 시작 -->
+		<table class="inter_table">
+		<colgroup>
+		<col width="15%">
+		<col width="25%">
+		<col width="25%">
+		<col width="25%">
+		<colgroup>
+		<tr>
+			<th>파운드</th>
+			<th>COMMON 등급 배송비</th>
+			<th>VVIP 등급배송비</th>
+			<th>VVIP 정기쿠폰사용시 배송비</th>
+		</tr>
+		
+		
+		
+		
+		<tr>
+			<td class="pound">1</td>
+			<td class="price">9,900원 (  $ 9 ) </td>
+			<td class="price">8,900원 (  $ 8.1 ) </td>
+			<td class="price">3,900원 (  $ 3.6 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">2</td>
+			<td class="price">12,100원 (  $ 11 ) </td>
+			<td class="price">10,900원 (  $ 9.9 ) </td>
+			<td class="price">5,900원 (  $ 5.4 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">3</td>
+			<td class="price">14,300원 (  $ 13 ) </td>
+			<td class="price">12,900원 (  $ 11.8 ) </td>
+			<td class="price">7,900원 (  $ 7.2 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">4</td>
+			<td class="price">16,500원 (  $ 15 ) </td>
+			<td class="price">14,900원 (  $ 13.6 ) </td>
+			<td class="price">9,900원 (  $ 9 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">5</td>
+			<td class="price">18,700원 (  $ 17 ) </td>
+			<td class="price">16,800원 (  $ 15.3 ) </td>
+			<td class="price">11,800원 (  $ 10.8 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">6</td>
+			<td class="price">20,900원 (  $ 19.1 ) </td>
+			<td class="price">18,800원 (  $ 17.1 ) </td>
+			<td class="price">13,800원 (  $ 12.6 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">7</td>
+			<td class="price">23,100원 (  $ 21.1 ) </td>
+			<td class="price">20,800원 (  $ 19 ) </td>
+			<td class="price">15,800원 (  $ 14.4 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">8</td>
+			<td class="price">25,300원 (  $ 23.1 ) </td>
+			<td class="price">22,800원 (  $ 20.8 ) </td>
+			<td class="price">17,800원 (  $ 16.2 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">9</td>
+			<td class="price">27,500원 (  $ 25.1 ) </td>
+			<td class="price">24,800원 (  $ 22.6 ) </td>
+			<td class="price">19,800원 (  $ 18.1 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">10</td>
+			<td class="price">29,700원 (  $ 27.1 ) </td>
+			<td class="price">26,700원 (  $ 24.3 ) </td>
+			<td class="price">21,700원 (  $ 19.8 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">11</td>
+			<td class="price">31,900원 (  $ 29.1 ) </td>
+			<td class="price">28,700원 (  $ 26.2 ) </td>
+			<td class="price">23,700원 (  $ 21.6 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">12</td>
+			<td class="price">34,100원 (  $ 31.1 ) </td>
+			<td class="price">30,700원 (  $ 28 ) </td>
+			<td class="price">25,700원 (  $ 23.4 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">13</td>
+			<td class="price">36,300원 (  $ 33.1 ) </td>
+			<td class="price">32,700원 (  $ 29.8 ) </td>
+			<td class="price">27,700원 (  $ 25.3 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">14</td>
+			<td class="price">38,500원 (  $ 35.1 ) </td>
+			<td class="price">34,700원 (  $ 31.6 ) </td>
+			<td class="price">29,700원 (  $ 27.1 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">15</td>
+			<td class="price">40,700원 (  $ 37.1 ) </td>
+			<td class="price">36,600원 (  $ 33.4 ) </td>
+			<td class="price">31,600원 (  $ 28.8 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">16</td>
+			<td class="price">42,900원 (  $ 39.1 ) </td>
+			<td class="price">38,600원 (  $ 35.2 ) </td>
+			<td class="price">33,600원 (  $ 30.6 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">17</td>
+			<td class="price">45,100원 (  $ 41.1 ) </td>
+			<td class="price">40,600원 (  $ 37 ) </td>
+			<td class="price">35,600원 (  $ 32.5 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">18</td>
+			<td class="price">47,300원 (  $ 43.1 ) </td>
+			<td class="price">42,600원 (  $ 38.8 ) </td>
+			<td class="price">37,600원 (  $ 34.3 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">19</td>
+			<td class="price">49,500원 (  $ 45.1 ) </td>
+			<td class="price">44,600원 (  $ 40.7 ) </td>
+			<td class="price">39,600원 (  $ 36.1 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">20</td>
+			<td class="price">51,700원 (  $ 47.1 ) </td>
+			<td class="price">46,500원 (  $ 42.4 ) </td>
+			<td class="price">41,500원 (  $ 37.8 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">21</td>
+			<td class="price">53,900원 (  $ 49.1 ) </td>
+			<td class="price">48,500원 (  $ 44.2 ) </td>
+			<td class="price">43,500원 (  $ 39.7 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">22</td>
+			<td class="price">56,100원 (  $ 51.1 ) </td>
+			<td class="price">50,500원 (  $ 46 ) </td>
+			<td class="price">45,500원 (  $ 41.5 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">23</td>
+			<td class="price">58,300원 (  $ 53.2 ) </td>
+			<td class="price">52,500원 (  $ 47.9 ) </td>
+			<td class="price">47,500원 (  $ 43.3 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">24</td>
+			<td class="price">60,500원 (  $ 55.2 ) </td>
+			<td class="price">54,500원 (  $ 49.7 ) </td>
+			<td class="price">49,500원 (  $ 45.1 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">25</td>
+			<td class="price">62,700원 (  $ 57.2 ) </td>
+			<td class="price">56,400원 (  $ 51.4 ) </td>
+			<td class="price">51,400원 (  $ 46.9 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">26</td>
+			<td class="price">64,900원 (  $ 59.2 ) </td>
+			<td class="price">58,400원 (  $ 53.2 ) </td>
+			<td class="price">53,400원 (  $ 48.7 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">27</td>
+			<td class="price">67,100원 (  $ 61.2 ) </td>
+			<td class="price">60,400원 (  $ 55.1 ) </td>
+			<td class="price">55,400원 (  $ 50.5 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">28</td>
+			<td class="price">69,300원 (  $ 63.2 ) </td>
+			<td class="price">62,400원 (  $ 56.9 ) </td>
+			<td class="price">57,400원 (  $ 52.3 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">29</td>
+			<td class="price">71,500원 (  $ 65.2 ) </td>
+			<td class="price">64,400원 (  $ 58.7 ) </td>
+			<td class="price">59,400원 (  $ 54.2 ) </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td class="pound">30</td>
+			<td class="price">73,700원 (  $ 67.2 ) </td>
+			<td class="price">66,300원 (  $ 60.4 ) </td>
+			<td class="price">61,300원 (  $ 55.9 ) </td>
+		</tr>
+	
+	</table>	
+
+
+	<!--안내1-->
+	<div class="tit_guid">
+		<span class="black">알아두셔야 할 점</span>
+		<ul class="green_boxInfo2">
+			<li>배송요금의 계산 기준은 최소 1lbs이며, 소수점 이하는 절상합니다. (예:1.2lbs => 2lbs)</li>
+			<li>해외배송요금은 관세, 부가세 등 수입세 및 특별처리비용이 포함되지 않은 금액이고, 통관중 수입세 등이 발생하면<br>
+			해당비용에 대해 결제가 이루어져야 택배집하가 시작됩니다.</li>
+			<li>일부품목에 대하여 중량으로 산출된 배송비와 부피무게로 산출된 배송비 중 큰 금액을 적용하며,<br>
+			부피무게는 다음 기준에 따라 산출됩니다.  (가로 * 세로 * 높이 (인치) / 166 = 부피무게)</li>
+		</ul>
+	</div>
+	<!--안내1끝-->
+		
+	<!--장바구니 자동등록하기 안내-->
+	<div class="green_box">
+		<div style="position:absolute; padding-left:10px;"><img src="/main/img/new_girl13.png"></div>
+		<div class="green_boxTit">
+			<span class="greenTxt lmar_200">부피무게는</span><br>
+			<span class="lmar_200" style="font-size:12px; font-weight:normal;">모든 항공요금의 경우 실제무게와 부피무게가 차이가 많이 나는 경우에는 부피무게가 청구 될 수</span><br>
+			<span class="lmar_200" style="font-size:12px; font-weight:normal;">있습니다. 부피무게 구하는 공식 : <strong>가로 * 세로 * 높이 (인치) / 166 = 부피무게</strong>가 됩니다.</span>
+		</div>
+		<div class="tmar_30 lmar_200">
+			<span class="pointTxt4">뉴저지/오레곤 물류센터의 공통사항</span><br><br>
+			저희 뉴욕걸즈는 업계 최초로 뉴저지/오레곤 센터 모두 동일한 부피무게정책을 적용하고 있습니다.<br>
+			부피 무게 발생시 부피무게의 50프로만을 계산하여 배송비를 산출합니다.<br>
+			결국 배송요금은 실제 저울 무게와 부피무게의 50%를 계산하여 비교하고<br>그 중 더 높은 값으로 부과됩니다.
+			<div class="green_boxIn">
+				예) 부피무게 10lbs / 실무게가 7lbs 에 경우 부피무게(50%)와 실무게를 비교하여,<br> 
+			 &nbsp;&nbsp;&nbsp;&nbsp;더높은 값 7lbs 요금으로 청구됩니다.<br>
+			 &nbsp;&nbsp;&nbsp;&nbsp;부피무게 20lbs / 실무게가 7lbs 에 경우 부피무게(50%)와 실무게를 비교하여,<br> 
+			 &nbsp;&nbsp;&nbsp;&nbsp;더 높은 값 10lbs 요금으로 청구됩니다.
+			</div>
+			
+			<div class="cuation4">
+				<dl>
+					<dt>주의 - 50프로 부피 적용이 안되는 예외상황</dt><br>
+					<dt>가. 사업자 통관건</dt>
+					<dd>개인 통관이 아닌 사업자 통관에 경우 부피 무게 면제(50% 적용)는 아예 불가능 합니다.<br>
+					실무게와 부피무게(100%)를 비교하여 더 높은 값으로 청구됩니다.<br>&nbsp;</dd>
+					<dt>나. 화물 규격이 70인치를 초과하는 경우</dt>
+					<dd>배송받으시는 화물에 한 변의 길이가 70인치를 초과되는 경우 개인/사업자 통관 구분없이<br>
+					실무게와 부피무게(100%)를 비교하여 더 높은 값으로 청구됩니다.<br>
+					예) 부피무게 10lbs / 실무게가 7lbs 에 경우 부피무게(100%)가 적용되어 배송요금은<br>
+					10lbs 요금으로 청구됩니다.</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!--장바구니 자동등록하기 안내 end//-->
+
+	<div class="center"><a href="/main/service/benefit_service.php"><img src="img/bt_benefit2.gif" alt="쉽게 보는 부피무게와 뉴걸만의 부피무게 할인혜택 보러가기"></a></div>
+
+	<!--내용 끝-->
+		
+	</div>
+</div>
+
+
+
+	  
+	  </div>
+	  <!--//###실제컨텐츠영역 -->
+
+	</div>
+
+
+
+  </div> 
+  </div> 
+  <!--//Contents -->
+
+
+
+    
+
+
+	<div id="sitemap">
+		<div class="sitemap_con">
+			<dl>
+				<dt>뉴욕걸즈 서비스안내</dt>
+				<dd><a href="/main/info/about.php">뉴욕걸즈는?</a></dd>
+				<dd><a href="/main/info/merit.php">뉴욕걸즈 장점  </a></dd>
+				<dd><a href="/main/info/ship_info.php">배송대행 안내</a></dd>
+				<dd><a href="/main/info/buy_info.php">구매대행 안내</a></dd>
+				<dd><a href="/main/info/eshop_info.php">뉴걸 E-Shop 안내</a></dd>
+				<dd><a href="/main/info/benefit.php">회원등급및 혜택</a></dd>
+				<dd><a href="/main/info/international.php">국제배송비 안내 (수수료 안내 포함)</a></dd>
+				<dd><a href="/main/info/empresa.php">기업회원 안내</a></dd>
+			</dl>
+
+			<dl>
+				<dt>해외직구 가이드</dt>
+				<dd><a href="/main/guide/post_office.php">사서함번호란 무엇인가요?</a></dd>
+				<dd><a href="/main/guide/njor.php">NJ?OR? 물류센터 선택방법</a></dd>
+				<dd><a href="/main/guide/shop_info.php">자주이용하는 쇼핑몰 소개</a></dd>
+				<dd><a href="/main/guide/recom_item.php">초보자용 해외직구 추천아이템</a></dd>
+				<dd><a href="/main/guide/tax_info.php">관세안내</a></dd>
+				<dd><a href="/main/guide/weight_info.php">제품별 예상무게 알아보기</a></dd>
+				<dd><a href="/main/guide/term.php">해외직구 용어사전</a></dd>
+				<dd><a href="/main/guide/forbid_list.php">배송불가및 수입금지리스트</a></dd>
+			</dl>
+
+			<dl>
+				<dt>배송대행</dt>
+				<dd><a href="/main/shipping/ship_single.php">배송대행 신청방법</a></dd>
+				<dd><a href="/main/shipping/ship_order.php">배송대행 신청</a></dd>
+				<dd><a href="/main/shipping/order_imsi_list.php">배송대행 임시보관함</a></dd>
+				<dd><a href="/main/shipping/order_all.php">합배송 신청</a></dd>
+				<dd><a href="/main/shipping/return_list.php">문제발생 (리턴신청)</a></dd>
+				<dd><a href="/main/shipping/nodata_about.php">노데이터 신청</a></dd>
+				<dd><a href="/main/shipping/ship_order_list.php">배송대행 내역조회</a></dd>
+			</dl>
+
+			<dl>
+				<dt>구매대행</dt>
+				<dd><a href="/main/order/order_faq_list.php">구매대행 견적문의방법</a></dd>
+				<dd><a href="/main/order/order_service.php">구매대행 견적문의</a></dd>
+				<dd><a href="/main/order/order_apply.php">구매대행 신청서 작성</a></dd>
+				<dd><a href="/main/order/order_list.php">구매대행 내역조회</a></dd>
+				<dd><a href="/main/order/eshop_inquiry.php">뉴걸 E-Shop 조회</a></dd>
+			</dl>			
+
+			<dl>
+				<dt>부가서비스</dt>
+				<!-- <dd><a href="/main/service/call_service.php">영어전화 서비스</a></dd> //-->
+				<dd><a href="/main/service/eng_service.php">영작도움 서비스</a></dd>
+				<dd><a href="/main/service/receiving_service.php">우편물 수령서비스</a></dd>
+				<dd><a href="/main/service/benefit_service.php">부피무게 할인혜택 서비스</a></dd>
+				<dd><a href="/main/service/com_system.php">검수 및 보상제도</a></dd>
+				<dd><a href="/main/service/calculator.php">배송요금 계산기</a></dd>
+				<dd><a href="/main/service/size_change.php">사이즈 변환표</a></dd>
+				<dd><a href="/main/service/webtoon.php">재미로보는 직구웹툰</a></dd>
+			</dl>
+
+			<dl>
+				<dt>핫딜 & 이벤트</dt>
+				<dd><a href="/main/deal/event.php">진행중 이벤트</a></dd>
+				<dd><a href="/main/deal/cafe_event.php">카페 이벤트</a></dd>
+				<dd><a href="/main/deal/deal_info.php">최신핫딜정보</a></dd> 
+				<dd><a href="/main/deal/auction.php">100원 경매</a></dd>
+			</dl>
+			
+			<dl>
+				<dt>고객센터</dt>
+				<dd><a href="/main/customer/notice.php">공지사항</a></dd>
+				<dd><a href="/main/customer/faq.php">FAQ(자주하는 질문)</a></dd>
+				<dd><a href="/main/customer/qna.php">1:1문의</a></dd>
+				<dd><a href="/main/customer/schedule.php">이번주 항공스케쥴</a></dd>
+				<dd><a href="/main/customer/exchange.php">이번주 고시환율</a></dd>
+				<dd><a href="/main/customer/coupon.php">뉴걸 쿠폰사용법</a></dd>
+				<dd><a href="/main/customer/rules.php">이용규칙</a></dd>
+			</dl>
+
+			<dl>
+				<dt>마이페이지</dt>
+				<dd><a href="/main/mypage/letter_list.php">나의 알림함</a></dd>
+				<dd><a href="/main/mypage/coupon_list.php">나의 쿠폰함</a></dd>
+				<dd><a href="/main/mypage/grade.php">나의 회원등급</a></dd>
+				<dd><a href="/main/mypage/service_list.php">나의 문의내역</a></dd>
+				<dd><a href="/main/mypage/shipping_rate.php">나의 배송요율표</a></dd>
+				<dd><a href="/main/mypage/address_list.php">나의 배송주소록</a></dd>
+				<dd><a href="/main/mypage/spcno_list.php">나의 개인통관고유부호</a></dd>
+				<dd><a href="/main/mypage/use_list.php">나의 배송비 사용내역</a></dd>
+				<dd><a href="/main/mypage/member_modify.php">회원정보수정</a></dd>
+			</dl>
+
+		</div>
+	</div>
+
+
+
+
+
+	
+  <!-- Footer -->
+  <div id="footer">
+		<div class="footMenu">
+			<ul>
+				<li class="first"><a href="/main/other/company.php">회사소개</a></li>
+				<li><a href="/main/other/policy.php">이용약관</a></li>
+				<li><a href="/main/other/privacy.php"><strong><!-- 개인정보취급방침 -->개인정보처리방침</strong></a></li>
+				<li><a href="/main/other/rules.php">이용규칙</a></li>
+			</ul>
+		</div>
+		<div class="footer_in">
+			<h2><img src="/main/img/foot_logo.gif" alt="뉴욕걸즈"></h2>
+			<ul>
+				<li class="tit">NEWYORKGIRLZ CORP</li>
+				<li>미국 물류센터 : 134 Liberty St. Hackensack. NJ 07601-3105. Tel: 1-201-488-0054 <br/>
+				한국 고객센터 : 서울 송파구 법원로 127 대명밸리온 1011호 (구주소 문정동 641-4번지) Tel: 02-470-9213<br/>
+				한국 결제대리인   상호:뉴욕걸즈 | 사업자번호: 211-06-85294 | 이메일: info@nygirlz.co.kr<br/>
+				배송대행 국제물류주선업 상호: (주)뉴욕걸즈 | 사업자번호 230-81-05944<br/>
+				본 홈페이지의 모든 권리는 NEWYORKGIRLZ CORP에 귀속됩니다. 
+				</li>
+				<li class="copyright">Copyright ⓒ 2011~2016 NEWYORKGIRLZ CORP. All Rights Reserved</li>
+			</ul>
+		</div>
+  </div>
+  <!--//Footer -->
+
+
+</div>
+<!-- //wrap -->
+
+
+
+		
+		<!-- 리포트2.0 로그분석코드 시작 -->
+			<script type="text/javascript">
+			var JsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+			var uname = escape('뉴욕걸즈');
+			document.write(unescape("%3Cscript id='log_script' src='" + JsHost + "nygirlz2.weblog.cafe24.com/weblog.js?uid=nygirlz2&uname="+uname+"' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+		<!-- 리포트2.0  로그분석코드 완료 -->
+		
+		<!-- 구글추적코드 시작-->	
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30434800-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+		<!-- 구글 추적코드 끝 -->
+		
+
+<!-- LOGGER TRACKING SCRIPT V.40 FOR logger.co.kr / 44146 : COMBINE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<!-- COPYRIGHT (C) 2002-2014 BIZSPRING INC. LOGGER(TM) ALL RIGHTS RESERVED. -->
+<script type="text/javascript">var _TRK_LID="44146";var _L_TD="ssl.logger.co.kr";var _TRK_CDMN=".nygirlz.co.kr";</script>
+<script type="text/javascript">var _CDN_DOMAIN = location.protocol == "https:" ? "https://fs.bizspring.net" : "http://fs.bizspring.net";document.write(unescape("%3Cscript src='" + _CDN_DOMAIN +"/fs4/bstrk.1.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<noscript><img alt="Logger Script" width="1" height="1" src="http://ssl.logger.co.kr/tracker.tsp?u=44146&amp;js=N" /></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+
+
+</body>
+</html>
+<map name="Map" id="Map"><area shape="rect" coords="0,40,76,60" href="/main/admin/" target="_blank" /></map>
